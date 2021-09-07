@@ -10,12 +10,12 @@ config_version=4
 
 _global_script_classes=[  ]
 _global_script_class_icons={
-
 }
 
 [application]
 
 config/name="Drincc Wizards"
+run/main_scene="res://StartMenu.tscn"
 config/icon="res://icon.png"
 
 [rendering]
