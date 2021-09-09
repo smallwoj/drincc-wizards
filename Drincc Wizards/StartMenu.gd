@@ -13,14 +13,14 @@ func _ready():
 
 func _on_CreateServerButton_pressed():
 	var net = NetworkedMultiplayerENet.new()
-	net.create_server(7777, 4)
+	net.create_server(int($Port.text), 4)
 	get_tree().set_network_peer(net)
 	print("hosting")
 
 
 func _on_JoinServerButton_pressed():
 	var net = NetworkedMultiplayerENet.new()
-	net.create_client("127.0.0.1", 7777)
+	net.create_client($IP.text, int($Port.text))
 	get_tree().set_network_peer(net)
 
 
